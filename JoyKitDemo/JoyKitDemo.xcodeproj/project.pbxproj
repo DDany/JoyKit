@@ -1,0 +1,756 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B1911A3186154E4008BC9FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1911A2186154E4008BC9FF /* Foundation.framework */; };
+		6B1911A5186154E4008BC9FF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1911A4186154E4008BC9FF /* CoreGraphics.framework */; };
+		6B1911A7186154E4008BC9FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1911A6186154E4008BC9FF /* UIKit.framework */; };
+		6B1911AD186154E4008BC9FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B1911AB186154E4008BC9FF /* InfoPlist.strings */; };
+		6B1911AF186154E4008BC9FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1911AE186154E4008BC9FF /* main.m */; };
+		6B1911B3186154E4008BC9FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1911B2186154E4008BC9FF /* AppDelegate.m */; };
+		6B1911B6186154E4008BC9FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B1911B4186154E4008BC9FF /* Main.storyboard */; };
+		6B1911B9186154E4008BC9FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1911B8186154E4008BC9FF /* ViewController.m */; };
+		6B1911BB186154E4008BC9FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B1911BA186154E4008BC9FF /* Images.xcassets */; };
+		6B1911C2186154E4008BC9FF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1911C1186154E4008BC9FF /* XCTest.framework */; };
+		6B1911C3186154E4008BC9FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1911A2186154E4008BC9FF /* Foundation.framework */; };
+		6B1911C4186154E4008BC9FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1911A6186154E4008BC9FF /* UIKit.framework */; };
+		6B1911CC186154E4008BC9FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B1911CA186154E4008BC9FF /* InfoPlist.strings */; };
+		6B1911CE186154E4008BC9FF /* JoyKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1911CD186154E4008BC9FF /* JoyKitDemoTests.m */; };
+		6B191233186155E2008BC9FF /* JKActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1911F0186155E2008BC9FF /* JKActionSheet.m */; };
+		6B191234186155E2008BC9FF /* JKAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1911F2186155E2008BC9FF /* JKAlertView.m */; };
+		6B191235186155E2008BC9FF /* JKBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1911F5186155E2008BC9FF /* JKBadgeView.m */; };
+		6B191236186155E2008BC9FF /* JKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1911F8186155E2008BC9FF /* JKViewController.m */; };
+		6B191237186155E2008BC9FF /* JKBundlePaths.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1911FB186155E2008BC9FF /* JKBundlePaths.m */; };
+		6B191238186155E2008BC9FF /* JKCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1911FD186155E2008BC9FF /* JKCache.m */; };
+		6B191239186155E2008BC9FF /* JKFoundationMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1911FF186155E2008BC9FF /* JKFoundationMethods.m */; };
+		6B19123A186155E2008BC9FF /* JKInvocationMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B191201186155E2008BC9FF /* JKInvocationMethods.m */; };
+		6B19123B186155E2008BC9FF /* JKNonRetainingCollections.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B191203186155E2008BC9FF /* JKNonRetainingCollections.m */; };
+		6B19123C186155E2008BC9FF /* JKRuntimeClassModifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B191206186155E2008BC9FF /* JKRuntimeClassModifications.m */; };
+		6B19123D186155E2008BC9FF /* JKSDKAvailability.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B191208186155E2008BC9FF /* JKSDKAvailability.m */; };
+		6B19123E186155E2008BC9FF /* NSDate+JoyKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B19120B186155E2008BC9FF /* NSDate+JoyKit.m */; };
+		6B19123F186155E2008BC9FF /* NSString+JoyKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B19120D186155E2008BC9FF /* NSString+JoyKit.m */; };
+		6B191240186155E2008BC9FF /* UIControl+JoyKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B19120F186155E2008BC9FF /* UIControl+JoyKit.m */; };
+		6B191241186155E2008BC9FF /* UIImage+JoyKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B191211186155E2008BC9FF /* UIImage+JoyKit.m */; };
+		6B191242186155E2008BC9FF /* UINavigationController+JoyKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B191213186155E2008BC9FF /* UINavigationController+JoyKit.m */; };
+		6B191243186155E2008BC9FF /* UIView+JoyKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B191215186155E2008BC9FF /* UIView+JoyKit.m */; };
+		6B191244186155E2008BC9FF /* JKInfiniteScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B191218186155E2008BC9FF /* JKInfiniteScrollView.m */; };
+		6B191245186155E2008BC9FF /* JKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B19121B186155E2008BC9FF /* JKNavigationController.m */; };
+		6B191246186155E2008BC9FF /* JKNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B19121E186155E2008BC9FF /* JKNavigator.m */; };
+		6B191247186155E2008BC9FF /* JKSingletonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B191221186155E2008BC9FF /* JKSingletonObject.m */; };
+		6B191248186155E2008BC9FF /* JKTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B191224186155E2008BC9FF /* JKTabBar.m */; };
+		6B191249186155E2008BC9FF /* UITabBarItem+JKTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B191226186155E2008BC9FF /* UITabBarItem+JKTabBar.m */; };
+		6B19124A186155E2008BC9FF /* JKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B191229186155E2008BC9FF /* JKTabBarController.m */; };
+		6B19124B186155E2008BC9FF /* JKTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B19122C186155E2008BC9FF /* JKTextView.m */; };
+		6B19124C186155E2008BC9FF /* JKUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B19122F186155E2008BC9FF /* JKUserDefaults.m */; };
+		6B19124D186155E2008BC9FF /* JKWindowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B191232186155E2008BC9FF /* JKWindowView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B1911C5186154E4008BC9FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B191197186154E4008BC9FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B19119E186154E4008BC9FF;
+			remoteInfo = JoyKitDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6B19119F186154E4008BC9FF /* JoyKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JoyKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B1911A2186154E4008BC9FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6B1911A4186154E4008BC9FF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6B1911A6186154E4008BC9FF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6B1911AA186154E4008BC9FF /* JoyKitDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JoyKitDemo-Info.plist"; sourceTree = "<group>"; };
+		6B1911AC186154E4008BC9FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6B1911AE186154E4008BC9FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6B1911B0186154E4008BC9FF /* JoyKitDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JoyKitDemo-Prefix.pch"; sourceTree = "<group>"; };
+		6B1911B1186154E4008BC9FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6B1911B2186154E4008BC9FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6B1911B5186154E4008BC9FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6B1911B7186154E4008BC9FF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6B1911B8186154E4008BC9FF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6B1911BA186154E4008BC9FF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6B1911C0186154E4008BC9FF /* JoyKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JoyKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B1911C1186154E4008BC9FF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6B1911C9186154E4008BC9FF /* JoyKitDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JoyKitDemoTests-Info.plist"; sourceTree = "<group>"; };
+		6B1911CB186154E4008BC9FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6B1911CD186154E4008BC9FF /* JoyKitDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JoyKitDemoTests.m; sourceTree = "<group>"; };
+		6B1911EF186155E2008BC9FF /* JKActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKActionSheet.h; sourceTree = "<group>"; };
+		6B1911F0186155E2008BC9FF /* JKActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKActionSheet.m; sourceTree = "<group>"; };
+		6B1911F1186155E2008BC9FF /* JKAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKAlertView.h; sourceTree = "<group>"; };
+		6B1911F2186155E2008BC9FF /* JKAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKAlertView.m; sourceTree = "<group>"; };
+		6B1911F4186155E2008BC9FF /* JKBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKBadgeView.h; sourceTree = "<group>"; };
+		6B1911F5186155E2008BC9FF /* JKBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKBadgeView.m; sourceTree = "<group>"; };
+		6B1911F7186155E2008BC9FF /* JKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKViewController.h; sourceTree = "<group>"; };
+		6B1911F8186155E2008BC9FF /* JKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKViewController.m; sourceTree = "<group>"; };
+		6B1911FA186155E2008BC9FF /* JKBundlePaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKBundlePaths.h; sourceTree = "<group>"; };
+		6B1911FB186155E2008BC9FF /* JKBundlePaths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKBundlePaths.m; sourceTree = "<group>"; };
+		6B1911FC186155E2008BC9FF /* JKCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKCache.h; sourceTree = "<group>"; };
+		6B1911FD186155E2008BC9FF /* JKCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKCache.m; sourceTree = "<group>"; };
+		6B1911FE186155E2008BC9FF /* JKFoundationMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKFoundationMethods.h; sourceTree = "<group>"; };
+		6B1911FF186155E2008BC9FF /* JKFoundationMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKFoundationMethods.m; sourceTree = "<group>"; };
+		6B191200186155E2008BC9FF /* JKInvocationMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKInvocationMethods.h; sourceTree = "<group>"; };
+		6B191201186155E2008BC9FF /* JKInvocationMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKInvocationMethods.m; sourceTree = "<group>"; };
+		6B191202186155E2008BC9FF /* JKNonRetainingCollections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKNonRetainingCollections.h; sourceTree = "<group>"; };
+		6B191203186155E2008BC9FF /* JKNonRetainingCollections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKNonRetainingCollections.m; sourceTree = "<group>"; };
+		6B191204186155E2008BC9FF /* JKPreprocessorMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKPreprocessorMacros.h; sourceTree = "<group>"; };
+		6B191205186155E2008BC9FF /* JKRuntimeClassModifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRuntimeClassModifications.h; sourceTree = "<group>"; };
+		6B191206186155E2008BC9FF /* JKRuntimeClassModifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKRuntimeClassModifications.m; sourceTree = "<group>"; };
+		6B191207186155E2008BC9FF /* JKSDKAvailability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKSDKAvailability.h; sourceTree = "<group>"; };
+		6B191208186155E2008BC9FF /* JKSDKAvailability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKSDKAvailability.m; sourceTree = "<group>"; };
+		6B191209186155E2008BC9FF /* JoyKitCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoyKitCore.h; sourceTree = "<group>"; };
+		6B19120A186155E2008BC9FF /* NSDate+JoyKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+JoyKit.h"; sourceTree = "<group>"; };
+		6B19120B186155E2008BC9FF /* NSDate+JoyKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+JoyKit.m"; sourceTree = "<group>"; };
+		6B19120C186155E2008BC9FF /* NSString+JoyKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JoyKit.h"; sourceTree = "<group>"; };
+		6B19120D186155E2008BC9FF /* NSString+JoyKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JoyKit.m"; sourceTree = "<group>"; };
+		6B19120E186155E2008BC9FF /* UIControl+JoyKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+JoyKit.h"; sourceTree = "<group>"; };
+		6B19120F186155E2008BC9FF /* UIControl+JoyKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+JoyKit.m"; sourceTree = "<group>"; };
+		6B191210186155E2008BC9FF /* UIImage+JoyKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JoyKit.h"; sourceTree = "<group>"; };
+		6B191211186155E2008BC9FF /* UIImage+JoyKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JoyKit.m"; sourceTree = "<group>"; };
+		6B191212186155E2008BC9FF /* UINavigationController+JoyKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+JoyKit.h"; sourceTree = "<group>"; };
+		6B191213186155E2008BC9FF /* UINavigationController+JoyKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+JoyKit.m"; sourceTree = "<group>"; };
+		6B191214186155E2008BC9FF /* UIView+JoyKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JoyKit.h"; sourceTree = "<group>"; };
+		6B191215186155E2008BC9FF /* UIView+JoyKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JoyKit.m"; sourceTree = "<group>"; };
+		6B191217186155E2008BC9FF /* JKInfiniteScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKInfiniteScrollView.h; sourceTree = "<group>"; };
+		6B191218186155E2008BC9FF /* JKInfiniteScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKInfiniteScrollView.m; sourceTree = "<group>"; };
+		6B19121A186155E2008BC9FF /* JKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKNavigationController.h; sourceTree = "<group>"; };
+		6B19121B186155E2008BC9FF /* JKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKNavigationController.m; sourceTree = "<group>"; };
+		6B19121D186155E2008BC9FF /* JKNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKNavigator.h; sourceTree = "<group>"; };
+		6B19121E186155E2008BC9FF /* JKNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKNavigator.m; sourceTree = "<group>"; };
+		6B191220186155E2008BC9FF /* JKSingletonObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKSingletonObject.h; sourceTree = "<group>"; };
+		6B191221186155E2008BC9FF /* JKSingletonObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKSingletonObject.m; sourceTree = "<group>"; };
+		6B191223186155E2008BC9FF /* JKTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKTabBar.h; sourceTree = "<group>"; };
+		6B191224186155E2008BC9FF /* JKTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKTabBar.m; sourceTree = "<group>"; };
+		6B191225186155E2008BC9FF /* UITabBarItem+JKTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+JKTabBar.h"; sourceTree = "<group>"; };
+		6B191226186155E2008BC9FF /* UITabBarItem+JKTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+JKTabBar.m"; sourceTree = "<group>"; };
+		6B191228186155E2008BC9FF /* JKTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKTabBarController.h; sourceTree = "<group>"; };
+		6B191229186155E2008BC9FF /* JKTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKTabBarController.m; sourceTree = "<group>"; };
+		6B19122B186155E2008BC9FF /* JKTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKTextView.h; sourceTree = "<group>"; };
+		6B19122C186155E2008BC9FF /* JKTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKTextView.m; sourceTree = "<group>"; };
+		6B19122E186155E2008BC9FF /* JKUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKUserDefaults.h; sourceTree = "<group>"; };
+		6B19122F186155E2008BC9FF /* JKUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKUserDefaults.m; sourceTree = "<group>"; };
+		6B191231186155E2008BC9FF /* JKWindowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKWindowView.h; sourceTree = "<group>"; };
+		6B191232186155E2008BC9FF /* JKWindowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKWindowView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B19119C186154E4008BC9FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B1911A5186154E4008BC9FF /* CoreGraphics.framework in Frameworks */,
+				6B1911A7186154E4008BC9FF /* UIKit.framework in Frameworks */,
+				6B1911A3186154E4008BC9FF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B1911BD186154E4008BC9FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B1911C2186154E4008BC9FF /* XCTest.framework in Frameworks */,
+				6B1911C4186154E4008BC9FF /* UIKit.framework in Frameworks */,
+				6B1911C3186154E4008BC9FF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B191196186154E4008BC9FF = {
+			isa = PBXGroup;
+			children = (
+				6B1911A8186154E4008BC9FF /* JoyKitDemo */,
+				6B1911C7186154E4008BC9FF /* JoyKitDemoTests */,
+				6B1911A1186154E4008BC9FF /* Frameworks */,
+				6B1911A0186154E4008BC9FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B1911A0186154E4008BC9FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B19119F186154E4008BC9FF /* JoyKitDemo.app */,
+				6B1911C0186154E4008BC9FF /* JoyKitDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B1911A1186154E4008BC9FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B1911A2186154E4008BC9FF /* Foundation.framework */,
+				6B1911A4186154E4008BC9FF /* CoreGraphics.framework */,
+				6B1911A6186154E4008BC9FF /* UIKit.framework */,
+				6B1911C1186154E4008BC9FF /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B1911A8186154E4008BC9FF /* JoyKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6B1911ED186155E2008BC9FF /* JoyKit */,
+				6B1911B1186154E4008BC9FF /* AppDelegate.h */,
+				6B1911B2186154E4008BC9FF /* AppDelegate.m */,
+				6B1911B4186154E4008BC9FF /* Main.storyboard */,
+				6B1911B7186154E4008BC9FF /* ViewController.h */,
+				6B1911B8186154E4008BC9FF /* ViewController.m */,
+				6B1911BA186154E4008BC9FF /* Images.xcassets */,
+				6B1911A9186154E4008BC9FF /* Supporting Files */,
+			);
+			path = JoyKitDemo;
+			sourceTree = "<group>";
+		};
+		6B1911A9186154E4008BC9FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B1911AA186154E4008BC9FF /* JoyKitDemo-Info.plist */,
+				6B1911AB186154E4008BC9FF /* InfoPlist.strings */,
+				6B1911AE186154E4008BC9FF /* main.m */,
+				6B1911B0186154E4008BC9FF /* JoyKitDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6B1911C7186154E4008BC9FF /* JoyKitDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				6B1911CD186154E4008BC9FF /* JoyKitDemoTests.m */,
+				6B1911C8186154E4008BC9FF /* Supporting Files */,
+			);
+			path = JoyKitDemoTests;
+			sourceTree = "<group>";
+		};
+		6B1911C8186154E4008BC9FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B1911C9186154E4008BC9FF /* JoyKitDemoTests-Info.plist */,
+				6B1911CA186154E4008BC9FF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6B1911ED186155E2008BC9FF /* JoyKit */ = {
+			isa = PBXGroup;
+			children = (
+				6B1911EE186155E2008BC9FF /* JoyKitAlertActionSheet */,
+				6B1911F3186155E2008BC9FF /* JoyKitBadgeView */,
+				6B1911F6186155E2008BC9FF /* JoyKitBaseViewController */,
+				6B1911F9186155E2008BC9FF /* JoyKitCore */,
+				6B191216186155E2008BC9FF /* JoyKitInfiniteScrollView */,
+				6B191219186155E2008BC9FF /* JoyKitNavigationController */,
+				6B19121C186155E2008BC9FF /* JoyKitNavigator */,
+				6B19121F186155E2008BC9FF /* JoyKitSingletonObject */,
+				6B191222186155E2008BC9FF /* JoyKitTabBar */,
+				6B191227186155E2008BC9FF /* JoyKitTabBarController */,
+				6B19122A186155E2008BC9FF /* JoyKitTextView */,
+				6B19122D186155E2008BC9FF /* JoyKitUserDefaults */,
+				6B191230186155E2008BC9FF /* JoyKitWindowView */,
+			);
+			name = JoyKit;
+			path = ../../JoyKit;
+			sourceTree = "<group>";
+		};
+		6B1911EE186155E2008BC9FF /* JoyKitAlertActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				6B1911EF186155E2008BC9FF /* JKActionSheet.h */,
+				6B1911F0186155E2008BC9FF /* JKActionSheet.m */,
+				6B1911F1186155E2008BC9FF /* JKAlertView.h */,
+				6B1911F2186155E2008BC9FF /* JKAlertView.m */,
+			);
+			path = JoyKitAlertActionSheet;
+			sourceTree = "<group>";
+		};
+		6B1911F3186155E2008BC9FF /* JoyKitBadgeView */ = {
+			isa = PBXGroup;
+			children = (
+				6B1911F4186155E2008BC9FF /* JKBadgeView.h */,
+				6B1911F5186155E2008BC9FF /* JKBadgeView.m */,
+			);
+			path = JoyKitBadgeView;
+			sourceTree = "<group>";
+		};
+		6B1911F6186155E2008BC9FF /* JoyKitBaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6B1911F7186155E2008BC9FF /* JKViewController.h */,
+				6B1911F8186155E2008BC9FF /* JKViewController.m */,
+			);
+			path = JoyKitBaseViewController;
+			sourceTree = "<group>";
+		};
+		6B1911F9186155E2008BC9FF /* JoyKitCore */ = {
+			isa = PBXGroup;
+			children = (
+				6B1911FA186155E2008BC9FF /* JKBundlePaths.h */,
+				6B1911FB186155E2008BC9FF /* JKBundlePaths.m */,
+				6B1911FC186155E2008BC9FF /* JKCache.h */,
+				6B1911FD186155E2008BC9FF /* JKCache.m */,
+				6B1911FE186155E2008BC9FF /* JKFoundationMethods.h */,
+				6B1911FF186155E2008BC9FF /* JKFoundationMethods.m */,
+				6B191200186155E2008BC9FF /* JKInvocationMethods.h */,
+				6B191201186155E2008BC9FF /* JKInvocationMethods.m */,
+				6B191202186155E2008BC9FF /* JKNonRetainingCollections.h */,
+				6B191203186155E2008BC9FF /* JKNonRetainingCollections.m */,
+				6B191204186155E2008BC9FF /* JKPreprocessorMacros.h */,
+				6B191205186155E2008BC9FF /* JKRuntimeClassModifications.h */,
+				6B191206186155E2008BC9FF /* JKRuntimeClassModifications.m */,
+				6B191207186155E2008BC9FF /* JKSDKAvailability.h */,
+				6B191208186155E2008BC9FF /* JKSDKAvailability.m */,
+				6B191209186155E2008BC9FF /* JoyKitCore.h */,
+				6B19120A186155E2008BC9FF /* NSDate+JoyKit.h */,
+				6B19120B186155E2008BC9FF /* NSDate+JoyKit.m */,
+				6B19120C186155E2008BC9FF /* NSString+JoyKit.h */,
+				6B19120D186155E2008BC9FF /* NSString+JoyKit.m */,
+				6B19120E186155E2008BC9FF /* UIControl+JoyKit.h */,
+				6B19120F186155E2008BC9FF /* UIControl+JoyKit.m */,
+				6B191210186155E2008BC9FF /* UIImage+JoyKit.h */,
+				6B191211186155E2008BC9FF /* UIImage+JoyKit.m */,
+				6B191212186155E2008BC9FF /* UINavigationController+JoyKit.h */,
+				6B191213186155E2008BC9FF /* UINavigationController+JoyKit.m */,
+				6B191214186155E2008BC9FF /* UIView+JoyKit.h */,
+				6B191215186155E2008BC9FF /* UIView+JoyKit.m */,
+			);
+			path = JoyKitCore;
+			sourceTree = "<group>";
+		};
+		6B191216186155E2008BC9FF /* JoyKitInfiniteScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				6B191217186155E2008BC9FF /* JKInfiniteScrollView.h */,
+				6B191218186155E2008BC9FF /* JKInfiniteScrollView.m */,
+			);
+			path = JoyKitInfiniteScrollView;
+			sourceTree = "<group>";
+		};
+		6B191219186155E2008BC9FF /* JoyKitNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				6B19121A186155E2008BC9FF /* JKNavigationController.h */,
+				6B19121B186155E2008BC9FF /* JKNavigationController.m */,
+			);
+			path = JoyKitNavigationController;
+			sourceTree = "<group>";
+		};
+		6B19121C186155E2008BC9FF /* JoyKitNavigator */ = {
+			isa = PBXGroup;
+			children = (
+				6B19121D186155E2008BC9FF /* JKNavigator.h */,
+				6B19121E186155E2008BC9FF /* JKNavigator.m */,
+			);
+			path = JoyKitNavigator;
+			sourceTree = "<group>";
+		};
+		6B19121F186155E2008BC9FF /* JoyKitSingletonObject */ = {
+			isa = PBXGroup;
+			children = (
+				6B191220186155E2008BC9FF /* JKSingletonObject.h */,
+				6B191221186155E2008BC9FF /* JKSingletonObject.m */,
+			);
+			path = JoyKitSingletonObject;
+			sourceTree = "<group>";
+		};
+		6B191222186155E2008BC9FF /* JoyKitTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				6B191223186155E2008BC9FF /* JKTabBar.h */,
+				6B191224186155E2008BC9FF /* JKTabBar.m */,
+				6B191225186155E2008BC9FF /* UITabBarItem+JKTabBar.h */,
+				6B191226186155E2008BC9FF /* UITabBarItem+JKTabBar.m */,
+			);
+			path = JoyKitTabBar;
+			sourceTree = "<group>";
+		};
+		6B191227186155E2008BC9FF /* JoyKitTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				6B191228186155E2008BC9FF /* JKTabBarController.h */,
+				6B191229186155E2008BC9FF /* JKTabBarController.m */,
+			);
+			path = JoyKitTabBarController;
+			sourceTree = "<group>";
+		};
+		6B19122A186155E2008BC9FF /* JoyKitTextView */ = {
+			isa = PBXGroup;
+			children = (
+				6B19122B186155E2008BC9FF /* JKTextView.h */,
+				6B19122C186155E2008BC9FF /* JKTextView.m */,
+			);
+			path = JoyKitTextView;
+			sourceTree = "<group>";
+		};
+		6B19122D186155E2008BC9FF /* JoyKitUserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				6B19122E186155E2008BC9FF /* JKUserDefaults.h */,
+				6B19122F186155E2008BC9FF /* JKUserDefaults.m */,
+			);
+			path = JoyKitUserDefaults;
+			sourceTree = "<group>";
+		};
+		6B191230186155E2008BC9FF /* JoyKitWindowView */ = {
+			isa = PBXGroup;
+			children = (
+				6B191231186155E2008BC9FF /* JKWindowView.h */,
+				6B191232186155E2008BC9FF /* JKWindowView.m */,
+			);
+			path = JoyKitWindowView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B19119E186154E4008BC9FF /* JoyKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B1911D1186154E4008BC9FF /* Build configuration list for PBXNativeTarget "JoyKitDemo" */;
+			buildPhases = (
+				6B19119B186154E4008BC9FF /* Sources */,
+				6B19119C186154E4008BC9FF /* Frameworks */,
+				6B19119D186154E4008BC9FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JoyKitDemo;
+			productName = JoyKitDemo;
+			productReference = 6B19119F186154E4008BC9FF /* JoyKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6B1911BF186154E4008BC9FF /* JoyKitDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B1911D4186154E4008BC9FF /* Build configuration list for PBXNativeTarget "JoyKitDemoTests" */;
+			buildPhases = (
+				6B1911BC186154E4008BC9FF /* Sources */,
+				6B1911BD186154E4008BC9FF /* Frameworks */,
+				6B1911BE186154E4008BC9FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B1911C6186154E4008BC9FF /* PBXTargetDependency */,
+			);
+			name = JoyKitDemoTests;
+			productName = JoyKitDemoTests;
+			productReference = 6B1911C0186154E4008BC9FF /* JoyKitDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B191197186154E4008BC9FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "True Internet Technology (Shanghai) Company Limited";
+				TargetAttributes = {
+					6B1911BF186154E4008BC9FF = {
+						TestTargetID = 6B19119E186154E4008BC9FF;
+					};
+				};
+			};
+			buildConfigurationList = 6B19119A186154E4008BC9FF /* Build configuration list for PBXProject "JoyKitDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B191196186154E4008BC9FF;
+			productRefGroup = 6B1911A0186154E4008BC9FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B19119E186154E4008BC9FF /* JoyKitDemo */,
+				6B1911BF186154E4008BC9FF /* JoyKitDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B19119D186154E4008BC9FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B1911BB186154E4008BC9FF /* Images.xcassets in Resources */,
+				6B1911AD186154E4008BC9FF /* InfoPlist.strings in Resources */,
+				6B1911B6186154E4008BC9FF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B1911BE186154E4008BC9FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B1911CC186154E4008BC9FF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B19119B186154E4008BC9FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B191236186155E2008BC9FF /* JKViewController.m in Sources */,
+				6B191242186155E2008BC9FF /* UINavigationController+JoyKit.m in Sources */,
+				6B19124A186155E2008BC9FF /* JKTabBarController.m in Sources */,
+				6B191248186155E2008BC9FF /* JKTabBar.m in Sources */,
+				6B191237186155E2008BC9FF /* JKBundlePaths.m in Sources */,
+				6B191240186155E2008BC9FF /* UIControl+JoyKit.m in Sources */,
+				6B19123B186155E2008BC9FF /* JKNonRetainingCollections.m in Sources */,
+				6B19123E186155E2008BC9FF /* NSDate+JoyKit.m in Sources */,
+				6B191238186155E2008BC9FF /* JKCache.m in Sources */,
+				6B191246186155E2008BC9FF /* JKNavigator.m in Sources */,
+				6B1911B9186154E4008BC9FF /* ViewController.m in Sources */,
+				6B191245186155E2008BC9FF /* JKNavigationController.m in Sources */,
+				6B191239186155E2008BC9FF /* JKFoundationMethods.m in Sources */,
+				6B19123D186155E2008BC9FF /* JKSDKAvailability.m in Sources */,
+				6B19124C186155E2008BC9FF /* JKUserDefaults.m in Sources */,
+				6B1911B3186154E4008BC9FF /* AppDelegate.m in Sources */,
+				6B19123F186155E2008BC9FF /* NSString+JoyKit.m in Sources */,
+				6B191249186155E2008BC9FF /* UITabBarItem+JKTabBar.m in Sources */,
+				6B19123A186155E2008BC9FF /* JKInvocationMethods.m in Sources */,
+				6B19123C186155E2008BC9FF /* JKRuntimeClassModifications.m in Sources */,
+				6B191233186155E2008BC9FF /* JKActionSheet.m in Sources */,
+				6B191235186155E2008BC9FF /* JKBadgeView.m in Sources */,
+				6B191243186155E2008BC9FF /* UIView+JoyKit.m in Sources */,
+				6B191241186155E2008BC9FF /* UIImage+JoyKit.m in Sources */,
+				6B191244186155E2008BC9FF /* JKInfiniteScrollView.m in Sources */,
+				6B19124D186155E2008BC9FF /* JKWindowView.m in Sources */,
+				6B19124B186155E2008BC9FF /* JKTextView.m in Sources */,
+				6B191247186155E2008BC9FF /* JKSingletonObject.m in Sources */,
+				6B1911AF186154E4008BC9FF /* main.m in Sources */,
+				6B191234186155E2008BC9FF /* JKAlertView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B1911BC186154E4008BC9FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B1911CE186154E4008BC9FF /* JoyKitDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B1911C6186154E4008BC9FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B19119E186154E4008BC9FF /* JoyKitDemo */;
+			targetProxy = 6B1911C5186154E4008BC9FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6B1911AB186154E4008BC9FF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B1911AC186154E4008BC9FF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6B1911B4186154E4008BC9FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B1911B5186154E4008BC9FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6B1911CA186154E4008BC9FF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B1911CB186154E4008BC9FF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B1911CF186154E4008BC9FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6B1911D0186154E4008BC9FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B1911D2186154E4008BC9FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JoyKitDemo/JoyKitDemo-Prefix.pch";
+				INFOPLIST_FILE = "JoyKitDemo/JoyKitDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6B1911D3186154E4008BC9FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JoyKitDemo/JoyKitDemo-Prefix.pch";
+				INFOPLIST_FILE = "JoyKitDemo/JoyKitDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6B1911D5186154E4008BC9FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JoyKitDemo.app/JoyKitDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JoyKitDemo/JoyKitDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JoyKitDemoTests/JoyKitDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6B1911D6186154E4008BC9FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JoyKitDemo.app/JoyKitDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JoyKitDemo/JoyKitDemo-Prefix.pch";
+				INFOPLIST_FILE = "JoyKitDemoTests/JoyKitDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B19119A186154E4008BC9FF /* Build configuration list for PBXProject "JoyKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B1911CF186154E4008BC9FF /* Debug */,
+				6B1911D0186154E4008BC9FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B1911D1186154E4008BC9FF /* Build configuration list for PBXNativeTarget "JoyKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B1911D2186154E4008BC9FF /* Debug */,
+				6B1911D3186154E4008BC9FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6B1911D4186154E4008BC9FF /* Build configuration list for PBXNativeTarget "JoyKitDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B1911D5186154E4008BC9FF /* Debug */,
+				6B1911D6186154E4008BC9FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B191197186154E4008BC9FF /* Project object */;
+}
