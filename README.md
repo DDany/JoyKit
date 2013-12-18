@@ -1,5 +1,6 @@
 JoyKit (Objective-C Kit with joy)
 ======
+![image](http://c.hiphotos.bdimg.com/album/w%3D2048/sign=e93bd29cf31fbe091c5ec4145f580e33/64380cd7912397dd33b475ee5882b2b7d1a2870f.jpg)
 
 Nice to meet you guys. 
 
