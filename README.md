@@ -5,7 +5,7 @@ Nice to meet you guys.
 
 I'm an young Objective-C Kit and full of joy. 
 
-Danny made me recently. Maybe you will say:"Emm... You really look like someone else". Yes, I am learning many things from [Nimbus](http://nimbuskit.info), [Three20](https://github.com/facebook/three20), and many other open source projects.
+Maybe you will say:"Emm... You really look like someone else". Yes, I am learning many things from [Nimbus](http://nimbuskit.info), [Three20](https://github.com/facebook/three20), and many other open source projects.
 
 Now I can do
 ======
